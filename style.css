@@ -1,111 +1,104 @@
 /* General CSS */
 :root {
-    --accent-color: #2f95f5;
-    --accent-color: #2fdef5;
-    --heading-font: "Roboto Slab", Georgia, serif;
-    --paragraph-font: "Archivo", Helvetica, sans-serif;
-    --paragraph-size: 16px;
-    --base-padding: 10px;
-    --base-margin: 10px;
-    --border: 1px solid black;
-  }
-  
+  --accent-color: #2f95f5;
+  --accent-color: #2fdef5;
+  --heading-font: "Roboto Slab", Georgia, serif;
+  --paragraph-font: "Archivo", Helvetica, sans-serif;
+  --paragraph-size: 16px;
+  --base-padding: 10px;
+  --base-margin: 10px;
+  --border: 1px solid black;
+}
+
 /* Small Device CSS */
-  
-  body {
-    font-size: var(--paragraph-size);
-    max-width: 100%;
-    font-family: var(--paragraph-font);
-    margin: var(--base-margin);
-  }
-  
-  h1,
-  h2,
-  h3 {
-    font-family: var(--heading-font);
-  }
-  
-  h1 {
-    font-size: 22px;
-  }
-  
-  h2 {
-    font-size: 18px;
-  }
-  
-  p,
-  nav,
-  main,
-  footer,
-  .submit, 
-  button,
-  input {
-    font-size: var(--paragraph-size);
-  }
-  
-  a:not(nav a, footer a) {
-    text-decoration: none;
-    color: black;
-  }
 
-  button, 
-  input {
-    border-radius: 5px;
-    padding: 5px;
-    border: var(--border);
-  }
+body {
+  font-size: var(--paragraph-size);
+  max-width: 100%;
+  font-family: var(--paragraph-font);
+  margin: var(--base-margin);
+}
 
-  button:hover,
-  input:hover {
-    transform: scale(1.01, 1.01);
-    box-shadow: 0 0 15px 0 #9E9E9E;
-    transition: all .4s ease;
-  }
-  
- /*|| NAVIGATION ||*/
-  nav {
-    background-color: rgba(43, 26, 121, 0.144);
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  nav li {
-    list-style: none;
-  }
-  
-  nav a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 0;
-  }
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p,
+nav,
+main,
+footer,
+.submit,
+button,
+input {
+  font-size: var(--paragraph-size);
+}
+
+a:not(nav a, footer a) {
+  text-decoration: none;
+  color: black;
+}
+
+button,
+input {
+  border-radius: 5px;
+  padding: 5px;
+  border: var(--border);
+}
+
+button:hover,
+input:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 0 0 15px 0 #9E9E9E;
+  transition: all .4s ease;
+}
+
+/*|| NAVIGATION ||*/
+nav {
+  background-color: rgba(43, 26, 121, 0.144);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+}
 
 /*|| Home Page ||*/
 .home {
-    color: white;
-    text-align: center;
-    background-image: url('https://images.unsplash.com/photo-1570284613060-766c33850e00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  color: white;
+  text-align: center;
 }
 
 .home h1 {
-    font-size: 150px;
+  font-size: 150px;
 }
 
-.home h1
-{
-  background-image: linear-gradient(
-    -225deg,
-    #0bf0dd 0%,
-    #e08721 29%,
-    #5900ff 67%,
-    #ff1361 100%
-  );
+.home h1 {
+  background-image: linear-gradient(-225deg,
+      #0bf0dd 0%,
+      #e08721 29%,
+      #5900ff 67%,
+      #ff1361 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -121,23 +114,22 @@
 
 /*|| Contact Page Form  ||*/
 form {
-    font-weight: bold;
-    text-align: center;
+  font-weight: bold;
+  text-align: center;
 }
 
 input:not([type=submit]) {
-    width: 30%;
-    border: 1px solid #ccc;
-    margin: 10px;
-    background-color: rgb(212, 242, 253);
+  width: 30%;
+  border: 1px solid #ccc;
+  margin: 10px;
+  background-color: rgb(212, 242, 253);
 }
 
 input,
 textarea {
-    background-color: rgb(212, 242, 253);
+  background-color: rgb(212, 242, 253);
 }
 
 input[type=submit] {
-    margin: 20px 10px;
+  margin: 20px 10px;
 }
-
